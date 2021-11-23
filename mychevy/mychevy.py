@@ -32,6 +32,21 @@ LOGIN_URL = "https://custlogin.gm.com/gmb2cprod.onmicrosoft.com/B2C_1A_SeamlessM
 TOKEN_URL = "https://custlogin.gm.com/gmb2cprod.onmicrosoft.com/B2C_1A_SeamlessMigration_SignUpOrSignIn/api/CombinedSigninAndSignup/confirmed?csrf_token={}&tx={}&p=B2C_1A_SeamlessMigration_SignUpOrSignIn"  # noqa
 
 URLS = {
+    "br": {
+        "success": "https://meu.chevrolet.com.br/init/loginSuccessData",
+        "oc_login": "https://meu.chevrolet.com.br/oc_login",
+        "loginSuccessData": "https://meu.chevrolet.com.br/api/init/loginSuccessData",
+        "home": "https://meu.chevrolet.com.br/home",
+        "login": "https://meu.chevrolet.com.br/oc_login",
+        "evstats": (
+            "https://meu.chevrolet.com.br/api/vehicleProfile/"
+            "{0}/{1}/evstats/false?cb={2}.{3}"
+        ),
+        "session": (
+            "https://meu.chevrolet.com.br/vehicleProfile/"
+            "{0}/{1}/createAppSessionKey?cb={2}.{3}"
+        ),
+    },
     "us": {
         "success": "https://my.chevrolet.com/init/loginSuccessData",
         "oc_login": "https://my.chevrolet.com/oc_login",
